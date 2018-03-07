@@ -5,135 +5,125 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-      <header class="main-header">
-          <nav class="main-nav">
-              <a class="main-header-logj">
-                  <img src="http://via.placeholder.com/100x50" alt="Логотип">
-              </a>              
-              <ul class="site-navigation">
-                  <li><a href="#">Студия</a></li>
-                  <li><a href="#">Клиенты</a></li>
-                  <li><a href="#">Магазин</a></li>
-                  <li><a href="#">Контакты</a></li>
-              </ul>
-              <ul class="user-navigation">
-                  <li class="cart">Корзина</li>
-              </ul>
-          </nav>       
-      </header>
-      <main style="catalog-main">
-          <h1>Магазин готовых шаблонов</h1>
-          <section style="catalog-price">
-              <h2>Стоимость:</h2>
-              <!--      форма фильтра        -->
-          </section>
-          <section style="catalog-filter-result">
-              <div style="sort-box">
-                  <h2>Сотрировать:</h2>
-                  <ul>
-                      <li><a href="#">По цене</a></li>
-                      <li><a href="#">По типу</a></li>
-                      <li><a href="#">По названию</a></li>
-                      <li><a href="#">По убыванию</a></li>
-                      <li><a href="#">По возрастанию</a></li>
-                  </ul>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="index.html" class="main-header-logo">
+          <img src="http://via.placeholder.com/100x50" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#" class="site-navigation-current">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="cart">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Магазин готовых шаблонов</h1>
+      <section class="catalog-price">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <b>Стоимость:</b>
+        <!--      форма фильтра        -->
+      </section>
+      <section class="catalog-filter-result">
+        <div class="sort-box">
+          <h2>Сотрировать:</h2>
+          <ul>
+            <li><a href="#" class="active">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li><a href="#" class="active">По убыванию</a></li>
+            <li><a href="#">По возрастанию</a></li>
+          </ul>
+        </div>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог шаблонов</h2>
+          <ul class="catalog-list">
+            <li>
+              <div class="catalog-item">
+                <div class="fat-line active"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">Sedona</a></h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
               </div>
-              <section style="catalog">
-                  <ul style="cataljg-list">
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                      <li>
-                          <a href="#">
-                              <div class="catalog-item">
-                                  <div class="fat-line">
-                                  </div>
-                                  <img src="http://via.placeholder.com/200x300">
-                                  <div class="information">
-                                      <h3>Sedona</h3>
-                                      <p>Информационный сайт для туристов</p>
-                                      <span class="buy">9900 руб.</span>
-                                  </div>
-                              </div>
-                          </a>    
-                      </li>
-                  </ul>
-              </section>
-          </section>
-      </main>
-      <footer class="main-footer">
+            </li>
+             <li>
+              <div class="catalog-item">
+                <div class="fat-line"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">Pink App</a></h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="catalog-item">
+                <div class="fat-line"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">Barbershop</a></h3>
+                  <p>Сайт салоны красоты. Для мужчин, да.</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="catalog-item">
+                <div class="fat-line"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">Mishka</a></h3>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="catalog-item">
+                <div class="fat-line"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">A Plus</a></h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="catalog-item">
+                <div class="fat-line"></div>
+                <img src="http://via.placeholder.com/200x300">
+                <div class="hover-information">
+                  <h3><a href="#">Кваст</a></h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <a class="buy">9900 руб.</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
           <section class="contacts">
               <p>NЁRDS DESIGN STUDIO</p>
               <p>191186, Санкт-Петербург,<br>
                   ул. Б. Конюшенная, д. 19/8<br>
-                  тел. +7 (812) 275-75-75                  
+                  тел. +7 (812) 275-75-75
               </p>
               <span class="button-mail">Напишите нам</span>
           </section>
@@ -147,11 +137,11 @@
               <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
       </footer>
-      <section class="modal writetous">
-          <p>Напишите нам</p>
-          <!-- здесь будет форма-->
-          <span class="button-send">Отправить</span>
-          <span class="modal-close">x</span>
-      </section>
+    <section class="modal writetous">
+      <p>Напишите нам</p>
+      <!-- здесь будет форма-->
+      <span class="button-send">Отправить</span>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
