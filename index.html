@@ -17,7 +17,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart">Корзина</li>
+          <li class="cart"><button class="button-cart" type="button">Корзина</button></li>
         </ul>
       </nav>
     </header>
@@ -26,10 +26,10 @@
         <p>Долго, дорого, скрупулезно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="button" href="#">Узнать больше</a>
-        <div class="slider-paginator">
-          <a class="slider-button active" href="#"></a>
-          <a class="slider-button" href="#"></a>
-          <a class="slider-button" href="#"></a>
+        <div class="slider">
+          <input type="radio" name="slider" id="radio1" checked>
+          <input type="radio" name="slider" id="radio2">
+          <input type="radio" name="slider" id="radio3">
         </div>
       </section>
       <h1 class="visually-hidden">Студия "Нёрдс"</h1>
@@ -115,10 +115,23 @@
       </div>
     </footer>
     <section class="write-to-us">
-      <p>Напишите нам</p>
-      <!-- здесь будет форма-->
-      <span class="button-send">Отправить</span>
-      <span class="modal-close">x</span>
+      <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <h3>Напишите нам</h3>
+        <p class="write-to-us-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" value="" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-to-us-item">
+          <label for="e-mail">Ваше e-mail:</label>
+          <input type="text" name="e-mail" value="" id="e-mail" placeholder="email@example.com">
+        </p>
+        <p class="write-to-us-item">
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" value="" id="letter" rows="5">В свободной форме</textarea>
+        </p>
+        <button class="button-send" type="submit">Отправить</button>
+      </form>
+      <button class="write-to-us-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
