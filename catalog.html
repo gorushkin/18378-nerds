@@ -30,10 +30,24 @@
             <legend>
               Стоимость:
             </legend>
+            <div  class="range">
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="price-range-list">
+              <li>
+                <label for="price1">от</label>
+                <input class="filter-input filter-input-range "type="text" name="price1" id="price1">
+              </li>
+              <li>
+                <label for="price2">до</label>
+                <input class="filter-input filter-input-range "type="text" name="price1" id="price2">
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="filter-opton-list">
               <li class="filter-opton">
                 <label for="adaptiv-filter">Адаптивная</label>
                 <input class="filter-input filter-input-radio" type="radio" name="website-type" id="adaptiv-filter" checked>
