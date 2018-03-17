@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css\normalize.css" rel="stylesheet">
+    <link href="css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -17,15 +20,15 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart"><button class="button-cart" type="button">Корзина</button></li>
+          <li class="cart"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <section class="slider">
-        <p>Долго, дорого, скрупулезно.</p>
+        <p class="promo">Долго, дорого, скрупулезно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button" href="#">Узнать больше</a>
+        <a class="button red-button" href="#">Узнать больше</a>
         <div class="slider">
           <input type="radio" name="slider" id="radio1" checked>
           <input type="radio" name="slider" id="radio2">
@@ -36,29 +39,29 @@
       <section class="products">
         <h2 class="visually-hidden">Что мы создаем</h2>
         <ul class="products-list">
-          <li class="website">
+          <li class="products-list-item">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button website" href="catalog.html" >Заказать</a>
+            <a class="button website-button red-button" href="catalog.html" >Заказать</a>
           </li>
-          <li class="application">
+          <li class="products-list-item">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button app" href="#">Заказать</a>
+            <a class="button app-button green-button" href="#">Заказать</a>
           </li>
-          <li class="presentation">
+          <li class="products-list-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button pre" href="#">Заказать</a>
+            <a class="button presentation-button yellow-button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <section class="about-us">
         <h3 class="visually-hidden">Немного о нас!</h3>
-        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
+        <p class="about-us-promo">Мы — маленькая, но гордая дизайн-студия из Краснодара</p>
+        <h3>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</h3>
+        <p class="we-can-do-title">Выполняем заказы на разработку:</p>
+        <ul class="we-can-do-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Веб-сайтов любой сложности</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -67,18 +70,18 @@
       <section class="feature">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип">
-        <p>с 2004 года Любим точность во всем:</p>
+        <p class="feature-title">с 2004 года Любим точность во всем:</p>
         <ul class="feature-list">
           <li>
-            <p>146<span>%</span></p>
+            <p class="our-level">146<span class="level">%</span></p>
             <p>Уровень самоотдачи</p>
           </li>
           <li>
-            <p>100<span>%</span></p>
+            <p class="our-level">100<span class="level">%</span></p>
             <p>Соблюдение сроков</p>
           </li>
           <li>
-            <p>50<span>%</span></p>
+            <p class="our-level">50<span class="level">%</span></p>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -98,26 +101,26 @@
         <h3 class="visually-hidden">Как к нам проехать</h3>
         <img src="img/map-with-marker.jpg" width="1440" height="785" alt="191186, Санкт-Петербург,
 ул. Б. Конюшенная, д. 19/8">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>
+        <h3 class="studio-name">NЁRDS DESIGN STUDIO</h3>
+        <p class="address">
             191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
+            ул. Б. Конюшенная, д. 19/8<br>S
             тел. +7 (812) 275-75-75
         </p>
-        <span class="button-mail">Напишите нам</span>
+        <button class="button red-button mail-button">Напишите нам</button>
       </section>
       <div class="social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <b>Давайте дружить, это выгодно!</b>
+        <b class="discont">Скидка 10% для друзей из социальных сетей.</b>
       </div>
     </footer>
     <section class="write-to-us">
-      <h3>Напишите нам</h3>
+      <h3 class="write-to-us-title">Напишите нам</h3>
       <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-to-us-item">
           <label for="name">Ваше имя:</label>
@@ -125,13 +128,13 @@
         </p>
         <p class="write-to-us-item">
           <label for="e-mail">Ваше e-mail:</label>
-          <input type="text" name="e-mail" value="" id="e-mail" placeholder="email@example.com">
+          <input type="text" name="e-mail" value="" id="e-mail" placeholder="email@example.com" invalid>
         </p>
         <p class="write-to-us-item">
           <label for="letter">Текст письма:</label>
           <textarea name="letter" id="letter" rows="5">В свободной форме</textarea>
         </p>
-        <button class="button-send" type="submit">Отправить</button>
+        <button class="button submit-button red-button" type="submit">Отправить</button>
       </form>
       <button class="write-to-us-close" type="button">Закрыть</button>
     </section>
