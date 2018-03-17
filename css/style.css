@@ -20,6 +20,14 @@ a {
   background-color: #eeeeee;
 }
 
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation {
   font-weight: 500;
@@ -143,7 +151,8 @@ a {
 .feature-list,
 .social-list,
 .sort-box-list,
-.pagination-list {
+.pagination-list,
+.catalog-list {
   list-style: none;
 }
 
@@ -314,7 +323,7 @@ a {
   color: #000000;
 }
 
-.filter-input:focus + label {
+.filter-input:disabled + label {
   color: #000000;
   opacity: 0.3;
 }
