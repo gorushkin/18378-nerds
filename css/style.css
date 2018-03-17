@@ -34,7 +34,9 @@ a {
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover {
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #f7898b;
 }
 
@@ -140,7 +142,8 @@ a {
 .products-list,
 .feature-list,
 .social-list,
-.sort-box-list {
+.sort-box-list,
+.pagination-list {
   list-style: none;
 }
 
@@ -203,9 +206,9 @@ a {
 .partner-list a:hover {
   opacity: 1;
 }
-/* .partner-list a:focus {
+.partner-list a:focus {
   opacity: 1.0;
-} */
+}
 
 .studio-name {
   font-size: 18px;
@@ -345,4 +348,8 @@ a {
 
 .hover-information {
   background-color: #eeeeee;
+}
+.pagination-list a.button-current {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
 }
