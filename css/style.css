@@ -1059,7 +1059,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 .filter-opton {
-  padding-left: 35px;
+  padding-left: 36px;
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -1091,8 +1091,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 25px;
   height: 25px;
-  top: -3px;
-  left: 0px;
+  top: -2px;
+  left: 1px;
   background-repeat: no-repeat;
   opacity: 0.4;
   background-position: 0 0;
@@ -1121,7 +1121,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
   opacity: 0.3;
 }
-
+.filter .button {
+  width: 260px;
+  margin-top: 3px;
+}
 
 .catalog-filter-result {
   width: 760px;
