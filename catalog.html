@@ -38,20 +38,25 @@
               <legend class="price-title">
                 Стоимость:
               </legend>
-              <div class="range">
-                <span></span>
-                <span></span>
+              <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
               </div>
-              <ul class="price-range-list">
-                <li>
-                  <label for="price1">ОТ</label>
-                  <input class="filter-input filter-input-range" type="text" name="price1" id="price1" placeholder="0">
-                </li>
-                <li>
-                  <label for="price2">ДО</label>
-                  <input class="filter-input filter-input-range" type="text" name="price1" id="price2" placeholder="15000">
-                </li>
-              </ul>
+                <ul class="price-controls">
+                  <li>
+                    <label for="price1">ОТ</label>
+                    <input class="filter-input filter-input-range" type="text" name="price1" id="price1" placeholder="0">
+                  </li>
+                  <li>
+                    <label for="price2">ДО</label>
+                    <input class="filter-input filter-input-range" type="text" name="price1" id="price2" placeholder="15000">
+                  </li>
+                </ul>
             </fieldset>
             <fieldset class="grid">
               <legend class="grid-title">Сетка:</legend>
@@ -238,11 +243,11 @@
       <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-to-us-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" value="" id="name" placeholder="Имя Фамилия">
+          <input type="text" name="name" value="Имя Фамилия" id="name">
         </p>
         <p class="write-to-us-item">
           <label for="e-mail">Ваше e-mail:</label>
-          <input type="text" name="e-mail" value="" id="e-mail" placeholder="email@example.com">
+          <input type="text" name="e-mail" id="e-mail" value="email@example.com">
         </p>
         <p class="write-to-us-item">
           <label for="letter">Текст письма:</label>
@@ -250,7 +255,7 @@
         </p>
         <button class="button submit-button red-button" type="submit">Отправить</button>
       </form>
-      <button class="write-to-us-close" type="button">Закрыть</button>
+      <button class="write-to-us-close visually-hidden" type="button">Закрыть</button>
     </section>
   </body>
 </html>
