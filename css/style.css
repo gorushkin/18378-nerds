@@ -678,6 +678,20 @@ input[type="radio"].visually-hidden {
 }
 .products {
   margin-bottom: 122px;
+  /* box-shadow: inset 0 0 0 2px green; */
+  /* padding-bottom: 122px; */
+  position: relative;
+}
+.products::after {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  /* background-color: #eeeeee; */
+  border-bottom-color: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  bottom: -83px;
 }
 
 .columns {
@@ -688,6 +702,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us {
   width: 660px;
+  /* box-shadow: inset 0 0 0 2px green; */
 }
 .about-us-promo {
   margin: 0;
@@ -759,7 +774,33 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* box-shadow: inset 0 0 0 2px green; */
+  position: relative;
 }
+.partner-list::after {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  /* background-color: #eeeeee; */
+  border-bottom-color: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  bottom: -39px;
+}
+.partner-list::before {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  /* background-color: #eeeeee; */
+  border-bottom-color: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  top: -50px;
+}
+
+
 .partner-list li {
   width: 300px;
   box-sizing: border-box;
