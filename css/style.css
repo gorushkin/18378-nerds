@@ -499,23 +499,7 @@ a {
   background-color: #eeeeee;
 }
 
-.filter ul {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #283136;
-  list-style: none;
-}
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #000000;
-}
-
-.filter-input:disabled + label {
-  color: #000000;
-  opacity: 0.3;
-}
 
 .sort-box-list a{
   font-size: 14px;
@@ -978,7 +962,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   justify-content: space-between;
   margin-bottom: 53px;
-
 }
 .price-controls label {
   font-size: 16px;
@@ -986,6 +969,7 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   margin-right: 8px;
 }
+
 .filter-input-range {
   width: 80px;
   height: 38px;
@@ -997,8 +981,6 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background: #f1f1f1;
   color: #000000;
-  /* margin-bottom: 52px; */
-
 }
 
 .grid-title {
@@ -1008,7 +990,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* box-shadow: inset 0 0 0 2px green; */
   margin-bottom: 45px;
 }
 .filter-opton {
@@ -1022,12 +1003,28 @@ input[type="radio"].visually-hidden {
 }
 .prop-title {
   margin-bottom: 16px;
-  /* box-shadow: inset 0 0 0 2px green; */
+}
+.filter ul {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+  list-style: none;
 }
 
+/* .filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+} */
+
+
+
 .filter-opton label {
-  /* box-shadow: inset 0 0 0 2px green; */
   cursor: pointer;
+  color: #283136;
+}
+.filter-opton label:hover {
+  color: #000000;
 }
 
 .filter-input + label::before {
@@ -1057,8 +1054,15 @@ input[type="radio"].visually-hidden {
 .filter-input + label:hover::before {
   opacity: 1;
 }
-
-
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.3;
+}
+.filter-input:focus + label {
+  color: #000000;
+  opacity: 1;
+  outline: 1px solid blue;
+}
 
 .catalog-filter-result {
   width: 760px;
