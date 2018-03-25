@@ -1050,13 +1050,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-/* .filter-input:hover + label,
-.filter-input:focus + label {
-  color: #000000;
-} */
-
-
-
 .filter-opton label {
   cursor: pointer;
   color: #283136;
@@ -1089,18 +1082,18 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox + label::before {
   background-image: url(../img/checkbox-off.svg);
 }
-.filter-input + label:hover::before {
+.filter-input + label:hover::before,
+.filter-input:focus + label::before,
+.filter-input:focus + label {
   opacity: 1;
+  color: #000000;
 }
+
 .filter-input:disabled + label {
   color: #000000;
   opacity: 0.3;
 }
-.filter-input:focus + label {
-  color: #000000;
-  opacity: 1;
-  outline: 1px solid blue;
-}
+
 
 .catalog-filter-result {
   width: 760px;
