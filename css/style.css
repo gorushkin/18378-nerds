@@ -1225,11 +1225,8 @@ input[type="radio"].visually-hidden {
 .fat-line {
   width: 360px;
   height: 40px;
-  /* box-shadow: inset 0 0 0 2px green; */
+  background-image:url('../img/browser.svg');
   opacity: 0.12;
-}
-.fat-line path {
-  /* fill: rgba(77, 77, 77, 0.12); */
 }
 
 .catalog-item .hover-information {
