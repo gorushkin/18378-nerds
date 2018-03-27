@@ -1280,6 +1280,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: relative;
   background-color: #eeeeee;
+  overflow: hidden;
 }
 
 .catalog-item:hover .fat-line,
@@ -1315,7 +1316,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 
-.hover-information .item-name{
+.hover-information .item-name {
   margin: 0px;
   font-size: 18px;
   font-weight: 700;
@@ -1323,6 +1324,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
   margin-bottom: 16px;
   text-transform: uppercase;
+}
+.item-name a {
+  color: #000000;
 }
 
 .hover-information .description {
@@ -1341,6 +1345,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 43px;
   position: absolute;
   bottom: 0px;
+  left: 80px;
 }
 
 .catalog-item:nth-child(2n) {
