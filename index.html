@@ -125,7 +125,8 @@
         <div class="map-wrap">
           <img class="map" src="img/map-with-marker.jpg" width="1440" height="785" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </div>
-        <div class="company-card">
+        <div class="company-card-container">
+          <div class="company-card">
           <h3 class="studio-name">NЁRDS DESIGN STUDIO</h3>
           <p class="address">
               191186, Санкт-Петербург,<br>
@@ -136,6 +137,7 @@
           </p>
           <button class="button red-button mail-button">Напишите нам</button>
         </div>
+      </div>
       </section>
       <div class="container">
         <div class="social">
@@ -166,11 +168,11 @@
       <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-to-us-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" value="Имя Фамилия" id="name">
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
         </p>
         <p class="write-to-us-item">
           <label for="e-mail">Ваше e-mail:</label>
-          <input type="text" name="e-mail" id="e-mail" value="email@example.com">
+          <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
         </p>
         <p class="write-to-us-item">
           <label for="letter">Текст письма:</label>
@@ -180,5 +182,39 @@
       </form>
       <button class="write-to-us-close" type="button">Закрыть</button>
     </section>
+    <script>
+      var link = document.querySelector(".cart");
+      var popup = document.querySelector(".write-to-us");
+      var close = document.querySelector(".write-to-us-close");
+      var inputname = popup.querySelector("[name=name]");
+      var mail = popup.querySelector("[name=e-mail]");
+      var text = popup.querySelector("[name=letter]");
+      var form = popup.querySelector("form");
+      
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("write-to-us-show");
+        inputname.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("write-to-us-show");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!inputname.value || !mail.value || !text.value) {
+          evt.preventDefault();
+          console.log("Пусто!!!!");      
+        } 
+        // else {
+        //   localStorage.setItem("name", inputname.value);
+        //   localStorage.setItem("e-mail", mail.value);
+        //   localStorage.setItem("letter", text.value);
+        // }
+      });
+
+
+    </script>
   </body>
 </html>
