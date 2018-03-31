@@ -105,7 +105,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .site-navigation {
-  width: 490px;
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,13 +706,9 @@ input[type="radio"].visually-hidden {
   height: 416px;
   margin: 0 auto;
   overflow: hidden;
-  /* position: relative; */
 }
 
 .map {
-  /* position: absolute; */
-  /* top: -152px; */
-  /* width: 100%; */
   display: block;
   margin: auto;
   -webkit-transform: translateY(-152px);
@@ -994,17 +990,52 @@ input[type="radio"].visually-hidden {
 }
 
 .write-to-us-item input,
+
 .write-to-us-item textarea {
   border-width: 2px;
   border-style: solid;
   border-color: #d7dcde;
-  color: rgba(68, 68, 68, 0.5);
+  /* color: rgba(68, 68, 68, 0.5); */
+  
 }
 .write-to-us-item input:hover,
 .write-to-us-item textarea:hover {
   border-color: #b4b9bb;
+  color: rgba(68, 68, 68, 0.5);  
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
+
+input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+input:focus:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+
+
 .write-to-us-item input:focus,
 .write-to-us-item textarea:focus,
 .write-to-us-item input:active,
@@ -1399,7 +1430,6 @@ input[type="radio"].visually-hidden {
   display: none;
   position: relative;
   background-color: #eeeeee;
-  /* overflow: hidden; */
 }
 
 .catalog-item:hover .fat-line,
@@ -1453,11 +1483,13 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  max-height: 411px;
+  max-height: 381px;
   color: #666666;
   width: 200px;
   text-align: center;
   overflow: auto;
+  min-height: 40px;
+  margin-bottom: 30px;
 }
 
 .hover-information .buy-button {
