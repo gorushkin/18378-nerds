@@ -248,9 +248,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
 }
-.slider-item:nth-child(3) {
-  display: block;
-}
+
 .slider-item:nth-child(1)  {
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
@@ -267,8 +265,35 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
 
-.slider-button i {
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-button .slider-controls-item--1::before,
+#product-2:checked ~ .slider-button .slider-controls-item--2::before,
+#product-3:checked ~ .slider-button .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 4;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-button label {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -279,7 +304,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 }
 
-.slider-button I::after {
+.slider-button label::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -303,7 +328,7 @@ input[type="radio"].visually-hidden {
           transform: translateX(-50%);
 }
 
-.slider-button .active::before {
+/* .slider-button .active::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -315,7 +340,7 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
-}
+} */
 
 /* Кнопки */
 
@@ -725,6 +750,8 @@ input[type="radio"].visually-hidden {
   z-index: 5;
   margin: auto;
   display: block;
+  width:100%;
+
 }
 .contacts {
   width: 100%;
@@ -938,7 +965,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
 .write-to-us-title {
   font-size: 45px;
   font-weight: 500;
@@ -999,7 +1025,6 @@ input[type="radio"].visually-hidden {
   border-width: 2px;
   border-style: solid;
   border-color: #d7dcde;
-  /* color: rgba(68, 68, 68, 0.5); */
   
 }
 .write-to-us-item input:hover,
@@ -1013,6 +1038,12 @@ textarea::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+
 input:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
@@ -1020,24 +1051,15 @@ input:focus:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 1);
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
 
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
 
 
 .write-to-us-item input:focus,
@@ -1051,10 +1073,13 @@ textarea:focus::-webkit-input-placeholder {
 .write-to-us-item input:invalid,
 .write-to-us-item textarea:invalid {
   border-color: #e74246;
+  color: #e74246;
 }
+
 
 .write-to-us-item .invalid {
   border-color: #e74246;
+  
 }
 
 
