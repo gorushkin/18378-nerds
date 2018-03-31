@@ -716,8 +716,14 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: auto;
   transform: translateY(-152px);
+  z-index: -1;
 }
 
+.map-wrap iframe {
+  z-index: 5;
+  margin: auto;
+  display: block;
+}
 .contacts {
   width: 100%;
   margin-bottom: 70px;
@@ -846,11 +852,44 @@ input[type="radio"].visually-hidden {
   margin-left: -480px;
   margin-top: -290px;
   z-index: 10;
+  
 }
 
 .write-to-us-show {
   display: block;
+  animation: fly 0.7s;
 }
+
+@keyframes fly {
+  0% {
+    transform: translateX(-500px) scale(0.1);
+  }
+
+  10% {
+    transform: translateX(-400px) scale(0.2);
+  }
+
+  30% {
+    transform: translateX(-300px) scale(0.3);
+  }
+  
+  40% {
+    transform: translateX(-200px) scale(0.4);
+  }
+
+  60% {
+    transform: translateX(-100px) scale(0.7);
+  }
+  90% {
+    transform: translateX(-50px) scale(0.9);
+  }
+
+
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
 
 
 .write-to-us-title {
@@ -932,6 +971,11 @@ input[type="radio"].visually-hidden {
   border-color: #e74246;
 }
 
+.write-to-us-item .invalid {
+  border-color: #e74246;
+}
+
+
 .write-to-us-close {
   position: absolute;
   width: 21px;
@@ -953,6 +997,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
   outline: none;
 }
+
+
+
+
+
+
 
 
 .inner-page .main-title {
