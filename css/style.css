@@ -631,16 +631,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.partner-list::after {
-  content: "";
-  width: 1160px;
-  height: 2px;
-  border-bottom-color: #eeeeee;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  position: absolute;
-  bottom: -39px;
-}
+
 
 .partner-list::before {
   content: "";
@@ -652,6 +643,19 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -50px;
 }
+
+.partner-list::after {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  border-bottom-color: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  right: 0;
+  bottom: -39px;
+}
+
 
 .partner-list li {
   width: 300px;
